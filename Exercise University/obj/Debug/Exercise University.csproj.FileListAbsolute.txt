@@ -1,0 +1,6 @@
+C:\Coding\Exercise University\Exercise University\bin\Debug\Exercise University.exe.config
+C:\Coding\Exercise University\Exercise University\bin\Debug\Exercise University.exe
+C:\Coding\Exercise University\Exercise University\bin\Debug\Exercise University.pdb
+C:\Coding\Exercise University\Exercise University\obj\Debug\Exercise University.csprojResolveAssemblyReference.cache
+C:\Coding\Exercise University\Exercise University\obj\Debug\Exercise University.exe
+C:\Coding\Exercise University\Exercise University\obj\Debug\Exercise University.pdb
