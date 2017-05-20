@@ -18,7 +18,11 @@ namespace Exercise_University
      
             
         }
-
+        /// <summary>
+        /// Adds the completed course and grade
+        /// </summary>
+        /// <param name="aCourse"></param>
+        /// <param name="aGrade"></param>
         public void AddCompletedCourseAndGrade(Course aCourse,float aGrade)
         {
             Console.WriteLine($"If {aCourse.name} is completed press 1");

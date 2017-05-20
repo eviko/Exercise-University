@@ -12,8 +12,10 @@ namespace Exercise_University
         List<Course> courses = new List<Course>();
         List<Student> students = new List<Student>();
         List<StudentFile> studentsFile = new List<StudentFile>();
-      
-       
+
+        /// <summary>
+        /// Add some (>10) courses and some (>10) students hardcoded inside University's constructor.
+        /// </summary>
         public University()
         {
             
@@ -44,7 +46,10 @@ namespace Exercise_University
 
 
         }
-
+        /// <summary>
+        /// Adds student
+        /// </summary>
+        /// <param name="name">student's name</param>
         public void AddStudent(string name)
         {
             bool exists = SearchStudentByName(name) != null;
@@ -52,7 +57,11 @@ namespace Exercise_University
                 students.Add(new Student(name));
 
         }
-
+        /// <summary>
+        /// search student by name
+        /// </summary>
+        /// <param name="name">student's name</param>
+        /// <returns></returns>
         public Student SearchStudentByName(string name)
         {
             bool exists = false;
@@ -64,6 +73,11 @@ namespace Exercise_University
 
             return null;
         }
+        /// <summary>
+        /// search courses by name
+        /// </summary>
+        /// <param name="name">course's name</param>
+        /// <returns></returns>
         public Course SearchCourseByName(string name)
         {
             bool exists = false;
@@ -76,22 +90,38 @@ namespace Exercise_University
             return null;
         }
 
+        /// <summary>
+        /// removes student from the list
+        /// </summary>
+        /// <param name="student"></param>
+
         public void RemoveStudent(Student student)
         {
             if (students.Contains(student))
                 students.Remove(student);
         }
-
+        /// <summary>
+        /// add course into the courses list
+        /// </summary>
+        /// <param name="course"></param>
         public void AddCourse(Course course)
         {
             courses.Add(course);
         }
+        /// <summary>
+        /// removes coursefrom the list courses
+        /// </summary>
+        /// <param name="course"></param>
         public void RemoveCourse(Course course)
         {
             if (courses.Contains(course))
                 courses.Remove(course); 
         }
-
+        /// <summary>
+        /// registers Student to course 
+        /// </summary>
+        /// <param name="course"></param>
+        /// <param name="student"></param>
         public void RegisterStudentToCourse(string course, string student)
         {
             Course c = SearchCourseByName(course);

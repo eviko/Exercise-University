@@ -17,7 +17,10 @@ namespace Exercise_University
         {
             this.name = name;
         }
-
+        /// <summary>
+        /// Adds Course to student
+        /// </summary>
+        /// <param name="aCourse"></param>
         public void AddCourseToStudent(Course aCourse)
         {
 

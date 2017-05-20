@@ -17,7 +17,10 @@ namespace Exercise_University
             name = aName;
             ect = anECT;
         }
-
+        /// <summary>
+        /// adds student to coourse
+        /// </summary>
+        /// <param name="aStudent"></param>
         public void AddStudentToCourse(Student aStudent)
         {
             bool exists = false;
